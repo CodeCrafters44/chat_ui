@@ -1,0 +1,141 @@
+:root,
+[data-theme=light] {
+  --header-border: #e33a57;
+  --clip-chatBox: polygon(0% 0%, 100% 0%, 89% 10%, 89% 100%, 75% 100%, 0 100%, 0% 75%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url("src/bg/bg-base.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+header .logo-box {
+  height: 5rem;
+  padding: 0.1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header .logo-box a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #b5922c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo-box a img {
+  height: 70%;
+  width: 3.2rem;
+}
+header .logo-box a .botname {
+  margin-left: 1rem;
+  font-size: 2em;
+  font-family: "Charmonman", cursive;
+}
+header ._codeCrafters-logo {
+  filter: invert(57%) sepia(61%) saturate(491%) hue-rotate(7deg) brightness(90%) contrast(89%);
+}
+
+main {
+  position: relative;
+  height: calc(100% - 6.5rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #chatarea {
+  position: relative;
+  height: 95%;
+  width: 95%;
+  border: 1px solid var(--header-border);
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main #chatarea .chatBubbles {
+  height: 90%;
+  width: 100%;
+}
+main #chatarea .chatInputSend {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  border-top: 1px solid var(--header-border);
+  display: flex;
+  align-items: center;
+}
+main #chatarea .chatInputSend .inputBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #chatarea .chatInputSend .inputBox input[type=text] {
+  height: 90%;
+  width: 70%;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 90px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+main #chatarea .chatInputSend .inputBox input[type=text]:focus {
+  border: 1px solid var(--header-border);
+}
+main #chatarea .chatInputSend .inputBox #send-button {
+  height: 4rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: transparent;
+  font-size: 2rem;
+  color: pink;
+}
+
+footer {
+  position: relative;
+  height: 1.5rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid var(--header-border);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .company {
+  font-weight: bold;
+  margin-left: 1rem;
+}/*# sourceMappingURL=style.css.map */

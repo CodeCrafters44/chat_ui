@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/brand/thumb.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body data-bs-theme="dark">
+    <!-- Main Navigation -->
+    <header class="chat">
+        <div class="logo-box">
+            <a href="#">
+                <img src="src/brand/logo.png" alt="_codeCrafters" class="_codeCrafters-logo">
+                <span class="botname">Chavi</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="chatarea">
+            <!-- Chats -->
+            <div class="chatBubbles"></div>
+            <!-- Chat Input -->
+            <div class="chatInputSend">
+                <div class="inputBox">
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added dynamically here -->
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="user-message" placeholder="Type your message..."
+                            oninput="showSendButton()">
+                        <button onclick="sendMessage()" id="send-button" class="hidden">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Main Footer -->
+    <footer>
+        &copy; Copyright <span class="company">_codeCrafzzters 2023</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

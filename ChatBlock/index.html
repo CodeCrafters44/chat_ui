@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_codeCrafteres | ChatBlock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="kavChat-main seelayout">
+        <!-- main chat block design -->
+        <div class="kavChat-chatbox seelayout">
+            <div class="kavChat-chatbox-content-pseudo-corner seeLayout"></div>
+            <div class="kavChat-chatbox-content-container seelayout">
+                <div class="kavChat-chatbox-content-username seelayout">
+                    <p>User</p>
+                </div>
+                Discuss the role of festivals in preserving and promoting cultural diversity in India. How do festivals
+                like Diwali, Eid, Holi, and Christmas bring people from different backgrounds together? Analyze the
+                cultural, social, and economic significance of these festivals in India, and the ways they contribute to
+                national unity and understanding among its people.
+            </div>
+        </div>
+        <!-- user side -->
+        <div class="kavChat-user seelayout">
+            <div class="user seelayout">
+                <img src="user.png" alt="User" class="seelayout">
+            </div>
+        </div>
+    </div>
+
+    <button id="seeLayout">Layout</button>
+
+</body>
+
+<script src="jQuery.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#seeLayout").click(function () {
+            $('.seelayout').toggleClass("border-layout");
+        })
+    });
+</script>
+
+</html>

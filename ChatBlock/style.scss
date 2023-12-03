@@ -1,0 +1,96 @@
+@import '_mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    @include d-flex;
+    background: #00000062;
+}
+
+.kavChat-main {
+    position: relative;
+    min-height: 10rem;
+    width: 50rem;
+    display: flex;
+    appearance: block;
+
+    .kavChat-chatbox {
+        position: relative;
+        width: 45rem;
+        height: 100%;
+
+        .kavChat-chatbox-content-container {
+            position: relative;
+            height: 100%;
+            width: 97%;
+            padding: 1rem;
+            text-align: justify;
+            background: yellow;
+            font-size: 1.3rem;
+            color: black;
+            border-radius: 1rem;
+            border-top-right-radius: 0;
+
+            .kavChat-chatbox-content-username {
+                height: 2rem;
+                width: 100%;
+                text-align: right;
+                padding-bottom: 3rem;
+            }
+
+        }
+        .kavChat-chatbox-content-pseudo-corner {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            height: 2rem;
+            width: 30px;
+            background: #000;
+            
+        }
+    }
+
+    .kavChat-user {
+        width: 5rem;
+        height: 100%;
+        // background: #90aeee;
+
+        .user {
+            height: 5rem;
+            width: 5rem;
+            overflow: hidden;
+            @include d-flex;
+
+            img {
+                height: 85%;
+                width: 85%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+#seeLayout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.border-layout {
+    border: 2px dotted red;
+}

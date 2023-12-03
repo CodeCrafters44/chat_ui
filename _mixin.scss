@@ -1,0 +1,13 @@
+@mixin d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-jus {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-ali {
+    display: flex;
+    align-items: center;
+}
